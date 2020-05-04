@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tabela da turma AIB</title>
+
+		<style>
+			table, th, td {
+				/*Coloca a tabela com linhas de expessura de 1px com a cor teal*/
+					border: 1px solid teal;
+				/*Muda a cor do fundo da tabela*/
+					background-color: #b3ffab;
+				/*Faz as linhas da tabela "colapsarem" e serem linhas unicas*/
+					border-collapse: collapse;
+				}
+
+			th, td {
+				/*Define a altura das tabelas para 150px no minimo*/
+					height: 225px;
+				/*Define a largura das tabelas para 135px no minimo*/
+					width: 135px;
+				}
+
+			td#t01 {
+				/* Muda a cor de fundo destas especificas celulas*/
+					background-color: #daffd6;
+				/*Define a largura destas especificas tabelas para 200px no minimo*/
+					width: 250px;
+				}
+			
+			/*Define 6 cores para as legendas de cada linha da tabela*/
+				.texto1{color:#5e8fff;} 
+				.texto2{color:#7e5eff;}
+				.texto3{color:#9752ff;}
+				.texto4{color:#ff6ba6;}
+				.texto5{color:#267d87;}
+		</style>
+	</head>
+
+	<!-- Centra todo o texto dentro da tabela no centro de cada celula*/ -->
+	<body style="text-align: center">
+
+		<!-- Cria um Titulo para a Tabela e coloca-o com a cor predefenida -->
+		<h1 class="texto5"> Planta da turma de AIB 2019/2020</h1> 
+		
+		<table align="center" > <!-- Centra  e cria uma tabela -->
+			<tr> <!-- Cria-se a primeira fila da tabela -->
+				<!-- Cria uma célula que ocupa 5 colunas e adiciona a cor atribuida a este id -->
+				<td colspan="5" id="t01"> </td>
+				
+				<!-- Cria uma célula que ocupa 4 colunas -->
+				<td colspan="4">
+				
+					<!-- Transforma a imagem do professor num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\luis_pitta.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do professor à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\luis_pitta_pequena.jpg" alt="Imagem de Luis Pitta"> </a>
+					<!-- Escreve a seguinte legenda com a cor predefenida -->
+					<h2 class="texto5"> Professor</br>Luis Pitta </h2> </td> 
+			</tr>
+			
+			<tr>
+				<td> 
+					<!-- Transforma a imagem do Nickollas num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\nyckollas.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Nickollas à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\nyckollas_pequena.jpg" alt="caricatura de Nyckolas"> </a>
+					<!-- Coloca o nome do Nickollas debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>Nycolas Brandão
+					<!--Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº20</br>12.6<b></p></td>
+
+				<td>
+					<!-- Transforma a imagem do André num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\andre.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do André à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\andre_pequena.jpg" alt="caricatura de André"> </a>
+					<!-- Coloca o nome do André debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>André Jesus
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº4</br>12.6<b></p></td>
+		
+				<td>
+					<!-- Transforma a imagem do António num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\antonio.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do António à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\antonio_pequena.jpg" alt="caricatura de António"> </a>
+					<!-- Coloca o nome do António debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>António Amaral
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº2</br>12.2<b></p></td>
+		
+				<td> 
+					<!-- Transforma a imagem do Camily num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\camily.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Camily à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\camily_pequena.jpg" alt="caricatura de Camily"> </a>
+					<!-- Coloca o nome do Camily debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>Camily Lopes
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº3</br>12.2<b></p></td>
+		
+				<td 
+					/*Cria uma célula que ocupa 4 colunas e adiciona a cor atribuida a este id*/
+					rowspan="4" id="t01"></td>
+			
+				<td> 
+					<!-- Transforma a imagem do Miriam num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\miriam.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do NMiriam à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\miriam_pequena.jpg" alt="caricatura de Miriam"> </a>
+					<!-- Coloca o nome do Miriam debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>Miriam Gonçalves
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº19</br>12.6<b></p></td>
+		
+				<td>
+					<!-- Transforma a imagem do Leonardo num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\leonardo.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Leonardo à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\leonardo_pequena.jpg" alt="caricatura de Leonardo"> </a>
+					<!-- Coloca o nome do Leonardo debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>Leonardo Bernado
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº17</br>12.6<b></p></td>
+		
+				<td>
+					<!-- Transforma a imagem do Paulo num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\paulo.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Paulo à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\paulo_pequena.jpg" alt="caricatura de Paulo"> </a>
+					<!-- Coloca o nome do Paulo debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>Paulo Pinto
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº20</br>12.2<b></p></td>
+		
+				<td> 
+					<!-- Transforma a imagem do João B. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\joao_b.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do João B. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\joao_b_pequena.jpg" alt="caricatura de João B."> </a>
+					<!-- Coloca o nome do João B. debaixo da imagem em bold e coloca a cor defenida do texto1 no paragrafo inteiro -->
+					<p class="texto1"><b>João Borges
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº13</br>12.2<b></p></td>
+			</tr>
+
+			<tr>
+				<td> 
+					<!-- Transforma a imagem do Ricardo num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\ricardo.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Ricardo à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\ricardo_pequena.jpg" alt="caricatura de Ricardo"> </a>
+					<!-- Coloca o nome do Ricardo debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Ricardo Fialho
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº23</br>12.2<b></p></td>
+				
+				<td> 
+					<!-- Transforma a imagem do Diogo num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\diogo.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Diogo à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\diogo_pequena.jpg" alt="caricatura de Diogo"> </a>
+					<!-- Coloca o nome do Diogo debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Diogo Santos
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº5</br>D12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Sebastião num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\sebastiao.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Sebastião à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\sebastiao_pequena.jpg" alt="caricatura de Sebastião"> </a>
+					<!-- Coloca o nome do Sebastião debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Sebastião Antunes
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº24</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Guilherme V. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\guilherme_v.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Guilherme V. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\guilherme_v_pequena.jpg" alt="caricatura de Guilherme V."> </a>
+					<!-- Coloca o nome do Guilherme V. debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Guilherme Valiente
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº8</br>12.2<b></p></td>
+			
+				<td>
+					<!-- Transforma a imagem do Guilherme C. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\guilherme_c.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Guilherme C. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\guilherme_c_pequena.jpg" alt="caricatura de Guilherme C."> </a>
+					<!-- Coloca o nome do Guilherme C. debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Guilherme Cabo
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº7</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Francisco num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\francisco.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Francisco à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\francisco_pequena.jpg" alt="caricatura de Francisco"> </a>
+					<!-- Coloca o nome do Francisco debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Francisco Almeida
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº6</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Henrique num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\henrique.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Henrique à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\henrique_pequena.jpg" alt="caricatura de Henrique"> </a>
+					<!-- Coloca o nome do Henrique debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Henrique Silva
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº9</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Xavier num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\xavier.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Xavier à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\xavier_pequena.jpg" alt="caricatura de Xavier."> </a>
+					<!-- Coloca o nome do Xavier debaixo da imagem em bold e coloca a cor defenida do texto2 no paragrafo inteiro -->
+					<p class="texto2"><b>Xavier Alves
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº25</br>12.6<b></p></td>
+			</tr>
+
+			<tr>
+				<td>
+					<!-- Transforma a imagem do João L. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\joao_l.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do João L. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\joao_l_pequena.jpg" alt="caricatura de João L."> </a>
+					<!-- Coloca o nome do João L. debaixo da imagem em bold e coloca a cor defenida do texto3 no paragrafo inteiro -->
+					<p class="texto3"><b>João Leal
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº15</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Miguel num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\miguel.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Miguel à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\miguel_pequena.jpg" alt="caricatura de Miguel"> </a>
+					<!-- Coloca o nome do Miguel debaixo da imagem em bold e coloca a cor defenida do texto3 no paragrafo inteiro -->
+					<p class="texto3"><b>Miguel Correia
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº18</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Pedro P. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\pedro_p.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Pedro P. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\pedro_p_pequena.jpg" alt="caricatura de Pedro P."> </a>
+					<!-- Coloca o nome do Pedro P. debaixo da imagem em bold e coloca a cor defenida do texto3 no paragrafo inteiro -->
+					<p class="texto3"><b>Pedro Peres
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº21</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do João S. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\joao_s.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do João S. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\joao_s_pequena.jpg" alt="caricatura de João S."> </a>
+					<!-- Coloca o nome do João S. debaixo da imagem em bold e coloca a cor defenida do texto3 no paragrafo inteiro -->
+					<p class="texto3"><b>João Silva
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº16</br>12.2<b></p></td>
+				
+				<!-- criou-se uma celula vazia para descrever um lugar vazio -->
+				<td></td>
+			
+				<td>
+					<!-- Transforma a imagem do João A. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\joao_a.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do João A. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\joao_a_pequena.jpg" alt="caricatura de João A."> </a>
+					<!-- Coloca o nome do João A. debaixo da imagem em bold e coloca a cor defenida do texto3 no paragrafo inteiro -->
+					<p class="texto3"><b>João Azevedo
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº14</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Nuno num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\nuno.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Nuno à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\nuno_pequena.jpg" alt="caricatura de Nuno"> </a>
+					<!-- Coloca o nome do Nuno debaixo da imagem em bold e coloca a cor defenida do texto3 no paragrafo inteiro -->
+					<p class="texto3"><b>Nuno Pires
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº19</br>12.2<b></p></td>
+				
+				<td>
+					<!-- Transforma a imagem do Daniel num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\daniel.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Daniel à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\daniel_pequena.jpg" alt="caricatura de Daniel"> </a>
+					<!-- Coloca o nome do Daniel debaixo da imagem em bold  e coloca a cor defenida do texto3 no paragrafo inteiro -->
+					<p class="texto3"><b>Daniel Dias
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº4</br>12.2<b></p></td>
+			</tr>
+
+			<tr>
+				<td 
+					/*Cria uma célula que ocupa 4 linhas e com a cor dos lugares vazios*/
+					colspan="4" id="t01"></td>
+				
+				<!-- Criou-se três celulas vazias para descrever os lugares vazios -->
+				<td></td>
+				<td></td>
+				<td></td>
+			
+				<td>
+					<!-- Transforma a imagem do Pedro F. num link para a imagem maior e abre essa imagem num novo separador -->
+					<p></p> <a href="images\pedro_f.jpg" target="_blank">
+					<!-- Vai buscar a imagem pequena do Pedro F. à pasta "imagens" e se a imagem não carregar mostra uma mensagem alternativa -->
+					<img src="images\pedro_f_pequena.jpg" alt="caricatura de Pedro F."> </a>
+					<!-- Coloca o nome do Pedro F. em bold debaixo da imagem e coloca a cor defenida do texto4 no paragrafo inteiro -->
+					<p class="texto4"><b>Pedro Filipe
+					<!-- Coloca o numero por baixo do nome e a turma do aluno por baixo do numero em bold -->
+					</br>nº22</br>12.2<b></p></td>
+			</tr>
+		</table>
+
+	</body>
+</html>
